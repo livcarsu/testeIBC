@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gato</title>
+</head>
+
+<body class="gato">
+    
+    <div class="teste2">
+
+        <h1 id="resultadoG"> </h1> 
+    
+    <p class="resposta"> Geralmente é uma pessoa mais comunicativa e tem como lema o “fazer junto”. São bem tradicionalistas, buscam harmonia e delegam autoridade. 
+        Os pontos mais fortes é que sabem manter a comunicação harmoniosa e aberta e desenvolver /manter a cultura empresarial. 
+        Suas motivações vêm da segurança, aceitação social, reconhecimento da equipe, ambiente harmônico e trabalho em grupo. 
+        Alguns pontos a serem mais trabalhados é a felicidade acima dos resultados, esconder conflitos e manipulação através dos sentimentos.</p>
+
+        <a href="lobo.html"><p id="resultadoL"> </p></a>
+        <a href="aguia.html"><p id="resultadoA"> </p></a>
+        <a href="tubarao.html"><p id="resultadoT"> </p></a>
+    
+    
+
+    <script>
+        document.getElementById("resultadoA").innerHTML = localStorage.getItem('porcAguia');
+        document.getElementById("resultadoT").innerHTML = localStorage.getItem('porcTuba');
+        document.getElementById("resultadoG").innerHTML = localStorage.getItem('porcGato');
+        document.getElementById("resultadoL").innerHTML = localStorage.getItem('porcLobo');
+
+    </script>
+</body>
+</html>   

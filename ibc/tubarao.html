@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tubarão</title>
+</head>
+<body class="tubarao">
+    <h1></h1>
+
+    <div class="teste2">
+
+    <h1 id="resultadoT"> </h1>
+    <p> É uma pessoa mais impulsiva e tem como lema o “fazer rápido”. 
+        São práticos, gostam de vencer desafios, senso de urgência, ação iniciativa e autossuficientes. Os pontos fortes é o fazer que ocorra, parar com burocracia e a motivação. 
+        Suas motivações vêm da liberdade de agir individualmente, o controle das próprias atividades, resolver problemas do seu jeito e não ter que repetir tarefas. 
+        Alguns pontos que devem ser melhorados é o fazer de modo mais fácil, o relacionamento complicado e a socialização.</p>
+
+    <a href="gato.html"><p id="resultadoG"> </p></a>
+    <a href="aguia.html"><p id="resultadoA"> </p></a>
+    <a href="lobo.html"><p id="resultadoL"> </p></a>
+    
+</div>
+    <script>
+        document.getElementById("resultadoA").innerHTML = localStorage.getItem('porcAguia');
+        document.getElementById("resultadoT").innerHTML = localStorage.getItem('porcTuba');
+        document.getElementById("resultadoG").innerHTML = localStorage.getItem('porcGato');
+        document.getElementById("resultadoL").innerHTML = localStorage.getItem('porcLobo');
+
+    </script>
+</body>
+</html>   

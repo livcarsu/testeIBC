@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lobo</title>
+</head>
+<body class="lobo">
+    <h1></h1>
+    <div class="teste2">
+
+    <h1 id="resultadoL"> </h1> 
+    <p> É uma pessoa organizada e tem como lema o “fazer certo”. São detalhistas, estrategistas, pontuais e previsível. 
+        Os pontos fortes que predominam é a consistência, conformidade e qualidade, a lealdade e segurança e a responsabilidade. 
+        Suas motivações vêm da certeza, compreensão exata das regras, o conhecimento especifico do trabalho e da ausência de riscos. 
+        Os pontos que devem melhorar é a dificuldade de se adaptar as mudanças e ser detalhista e sistemático. </p>
+
+        <a href="gato.html"><p id="resultadoG"> </p></a>
+        <a href="aguia.html"><p id="resultadoA"> </p></a>
+            <a href="tubarao.html"><p id="resultadoT"> </p></a>
+    </div>
+
+    <script>
+        document.getElementById("resultadoA").innerHTML = localStorage.getItem('porcAguia');
+        document.getElementById("resultadoT").innerHTML = localStorage.getItem('porcTuba');
+        document.getElementById("resultadoG").innerHTML = localStorage.getItem('porcGato');
+        document.getElementById("resultadoL").innerHTML = localStorage.getItem('porcLobo');
+
+    </script>
+</body>
+</html>   

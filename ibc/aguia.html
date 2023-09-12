@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Águia</title>
+</head>
+<body class="aguia">
+    <h1></h1>
+
+    <div class="teste2"> 
+    <h1 id="resultadoA"> </h1>
+
+    <p> Na maioria das vezes é uma pessoa idealizadora e tem como lema o fazer diferente. São bem criativos, intuitivos, curiosos e focam no futuro. 
+        Os pontos mais fortes é que são radicais e amam provocar mudanças radicais. 
+        As motivações vêm a partir de vários fatores incluindo a liberdade de expressão e a liberdade para fazer exceções, uma ausência de controles rígidos e oportunidades para delegar tarefas e detalhes. 
+        Alguns pontos que devem ser melhorados é a falta de atenção para o aqui e agora, a impaciência e a rebeldia. </p>
+
+    <a href="tubarao.html"><p id="resultadoT"> </p></a>
+    <a href="gato.html"><p id="resultadoG"> </p></a>
+    <a href="lobo.html"><p id="resultadoL"> </p></a>
+
+    </div>
+    <script>
+        document.getElementById("resultadoA").innerHTML = localStorage.getItem('porcAguia');
+        document.getElementById("resultadoT").innerHTML = localStorage.getItem('porcTuba');
+        document.getElementById("resultadoG").innerHTML = localStorage.getItem('porcGato');
+        document.getElementById("resultadoL").innerHTML = localStorage.getItem('porcLobo');
+
+    </script>
+</body>
+</html>   
